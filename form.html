@@ -20,26 +20,27 @@
         </label>
         <br>
 
-        <h5>Користуєтесь автомобілем?</h5>
+        <label>Користуєтесь автомобілем?</label>
         <label>
-            <input type="checkbox"/>так
+            <input type="checkbox" name="так" value="так"/>так
         </label>
         <label>
-            <input type="checkbox"/>ні
+            <input type="checkbox" name="ні" value="ні"/>ні
         </label>
+        <br>
 
-        <h2>Якого виробника?</h2>
+        <label>Якого виробника?</label>
         <label>
-            <input type="checkbox"/>bmw
+            <input type="checkbox" name="bmw" value="bmw"/>bmw
         </label>
         <label>
-            <input type="checkbox"/>audi
+            <input type="checkbox" name="audi" value="audi"/>audi
         </label>
         <label>
-            <input type="checkbox"/>toyota
+            <input type="checkbox" name="toyota" value="toyota"/>toyota
         </label>
         <label>
-           <input type="text"/>інший варіант
+           <input type="text" name="інший варіант"/>інший варіант
         </label>
         <br>
         <label>вид кузова:</label>
@@ -53,8 +54,15 @@
             <input type="radio" name="вид кузова:" value="інший"> інший
         </label>
         <br>
-         <input type="submit">
+        <label>Ціна автомобіля,USD</label>
+
+        <input oninput="out.value=(ran.value)" id="ran" type="range" min="0" max="100000" name="price">
+        <output id="out">0</output>
+
+        <br>
+        <input type="submit">
         <input type="reset">
-   </form>
+    </form>
 </body>
+
 </html>
