@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" action="https://formspree.io/roman_medvyd@ukr.net">
+        <h2>Анкета опитування</h2>
+        <label for="client-name">Ваше ім’я:</label>
+        <input type="text" id="client-name" placeholder="ім’я" required name="client-name">
+        <br>
+        <label>
+           Пошта: <input type="email" placeholder="е адреса"
+              required name="client-email">
+        </label>
+        <br>
+
+        <h5>Користуєтесь автомобілем?</h5>
+        <label>
+            <input type="checkbox"/>так
+        </label>
+        <label>
+            <input type="checkbox"/>ні
+        </label>
+
+        <h2>Якого виробника?</h2>
+        <label>
+            <input type="checkbox"/>bmw
+        </label>
+        <label>
+            <input type="checkbox"/>audi
+        </label>
+        <label>
+            <input type="checkbox"/>toyota
+        </label>
+        <label>
+           <input type="text"/>інший варіант
+        </label>
+        <br>
+        <label>вид кузова:</label>
+        <label>
+            <input type="radio" name="вид кузова:" value="седан"> седан
+        </label>
+        <label>
+            <input type="radio" name="вид кузова:" value="універсал"> універсал
+        </label>
+        <label>
+            <input type="radio" name="вид кузова:" value="інший"> інший
+        </label>
+        <br>
+         <input type="submit">
+        <input type="reset">
+   </form>
+</body>
+</html>
